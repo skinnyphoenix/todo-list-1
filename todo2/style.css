@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Geologica&display=swap");
+
+h1 {
+  color: #0d69e6;
+  font-family: "Geologica", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(37, 35, 35, 1) 100%);
+}
+
+.todo {
+  width: 50%;
+  min-height: 50vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+  background-color: #100c4d;
+  border-radius: 12px;
+  -webkit-box-shadow: 5px 5px 11px 1px rgba(0, 0, 0, 0.64);
+  box-shadow: 5px 5px 11px 1px rgba(0, 0, 0, 0.64);
+}
+
+.wrapperTodo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.wrapperTodo p {
+  border: 1px solid #084496;
+  padding: 5px;
+  border-radius: 8px;
+  font-family: "Geologica", sans-serif;
+  color: #0d69e6;
+}
+
+/*Buttons*/
+
+.addNewTask {
+  border: 1px solid #084496;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.5s all;
+}
+
+.addNewTask:hover {
+  background-color: #0d69e6;
+}
+
+.clearTasks {
+  border: 1px solid #084496;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.5s all;
+  font-family: "Geologica", sans-serif;
+}
+
+.clearTasks:hover {
+  background-color: #0d69e6;
+}
+
+.insertTask {
+  border: none;
+  border-radius: 5px;
+  padding: 9px;
+  border: 1px solid #084496;
+  font-family: "Geologica", sans-serif;
+}
+
+.wrapperBtns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+/*Media Query*/
+
+@media screen and (max-width: 768px) {
+  .wrapperBtns {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+  }
+}
